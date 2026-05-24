@@ -1,0 +1,21 @@
+import express from "express";
+import authMiddleware from "../middleware/auth.js";
+import {
+  listOrders,
+  placeOrder,
+  payuCallback,
+  updateStatus,
+  userOrders,
+  verifyOrder,
+} from "../controllers/orderController.js";
+
+const orderRouter = express.Router();
+
+orderRouter.post("/place", authMiddleware, placeOrder);
+orderRouter.post("/payu-callback", payuCallback); // PayU POSTs here — no auth middleware
+orderRouter.post("/verify", verifyOrder);
+orderRouter.post("/status", authMiddleware, updateStatus);
+orderRouter.post("/userorders", authMiddleware, userOrders);
+orderRouter.get("/list", authMiddleware, listOrders);
+
+export default orderRouter;

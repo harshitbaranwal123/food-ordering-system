@@ -1,0 +1,242 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 60px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.navbar-brand,
+.brand-smart,
+.brand-ordering {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+
+.brand-smart {
+  color: #ff6b35;
+  font-weight: 800;
+}
+
+.brand-ordering {
+  color: #1a1a1a;
+  font-weight: 800;
+}
+
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: #ff6b35;
+  border-radius: 2px;
+  transition: width 0.28s ease;
+}
+
+.navbar-menu a:hover {
+  color: #ff6b35;
+  transform: translateY(-1px);
+}
+
+.navbar-menu a:hover::after,
+.navbar-menu a.active::after {
+  width: 100%;
+}
+
+.navbar-menu a.active {
+  color: #ff6b35;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-right img {
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-right img:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background: #ff6b35;
+  border-radius: 50%;
+}
+
+.navbar-right button {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 8px 22px rgba(255, 107, 53, 0.25);
+}
+
+.navbar-right button:hover {
+  background: #e85d2a;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(255, 107, 53, 0.32);
+}
+
+.navbar-profile {
+  position: relative;
+}
+
+.navbar-profile img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ff6b35;
+  padding: 2px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-profile:hover img {
+  transform: translateY(-1px);
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 54px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 170px;
+  display: none;
+  z-index: 999;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: block;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-profile-dropdown li:hover {
+  background: #fff4f0;
+  color: #ff6b35;
+}
+
+.nav-profile-dropdown hr {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 6px 0;
+}
+
+.nav-profile-dropdown li img {
+  width: 16px;
+  height: 16px;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 1050px) {
+  .navbar {
+    padding: 14px 28px;
+  }
+  .navbar-menu {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-menu {
+    gap: 16px;
+  }
+  .navbar-right {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    padding: 14px 18px;
+  }
+  .navbar-menu {
+    display: none;
+  }
+}
+
