@@ -131,8 +131,8 @@ Just raise an issue, and we will discuss it.
 MCA Student | Full Stack Developer | Graphic Designer
 
 * GitHub: https://github.com/harshitbaranwal123
-* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-ID/
-* Email: [mrdesigner7520@gmail.com](mailto:mrdesigner7520@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/harshit-kumar-baranwal-8087b9329/
+* Email: [harshitbaranwal116@gmail.com](mailto:harshitbaranwal116@gmail.com)
 
 ## Feedback
 
