@@ -125,6 +125,16 @@ The application is deployed on Render.
 Contributions are always welcome!
 Just raise an issue, and we will discuss it.
 
+## Developer
+
+**Harshit Kumar Baranwal**
+MCA Student | Full Stack Developer | Graphic Designer
+
+* GitHub: https://github.com/harshitbaranwal123
+* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-ID/
+* Email: [mrdesigner7520@gmail.com](mailto:mrdesigner7520@gmail.com)
+
 ## Feedback
 
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/pujit-swikrit-57019424a/)
+If you have any feedback or suggestions, feel free to connect with me through GitHub or LinkedIn.
+
